@@ -1,0 +1,204 @@
+/* CSS  RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    position:sticky;
+    margin-top: 20px;
+    
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+/* NAVIGATION BAR */
+#navbar {
+    position: sticky;
+    top: 0px; 
+}
+/* LIST STYLING */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color: white;
+    
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color:black;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}   
+/* HOME SECTION */
+#home {
+    display: flex;
+    height:  500px;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: darkblue;
+    font-weight: bold;
+}
+.h-primary {
+    padding: 12px;
+    font-family:"Bree Serif", serif;
+    font-size: 2.5rem;
+}
+#home::before{
+    content: "";
+    background: url("bckgrnd-2\ image.jpg") no-repeat center center/cover ;
+    position: absolute;
+    height: 478px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    padding-left: 65px;
+}
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color:white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+#h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family:"Bree Serif", serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(218, 82, 82);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(197, 190, 190);
+    padding-right: 90px;
+    padding-left: 65px;
+    padding-top: 47px;
+    padding-bottom: 10px;
+
+
+}
+#services .box img{
+    height:200px;
+    margin: auto;
+    display:block;
+    flex-direction: column;
+    
+
+    
+}
+.tr{
+    width: 180px;
+}
+#client-section{
+    height: 440px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("image2.jpg") no-repeat center center/cover; 
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 10;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#clients img{
+    height: 110px;
+
+}
+#client-item{
+    padding: 35px;
+
+}
+#h-primary{
+    font-size: 5.5rem;
+}
+#contact{
+    position: relative;
+    padding-top: -500px
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url("con3.jpg")no-repeat center center/cover;
+}
+.footer{
+    background:black;
+    color: white;
+    text-align: center;
+}
+#center{
+    text-align: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+}
